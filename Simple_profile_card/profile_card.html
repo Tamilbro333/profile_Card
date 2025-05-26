@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile_cards</title>
+    <style>
+        .card{
+            color: white;
+            width: 400px;
+            text-align: center;
+            background-color: rgb(209, 10, 209);
+            border-radius: 30px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+            padding: 10px;
+        
+        }
+        .card:hover{
+            transform: scale(1.03);
+            transition: transform 0.3s ;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        
+        .insta:hover{
+            color: rgb(255, 255, 255);
+        }
+        .profile{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 5px solid white;
+        }
+        @media(max-width:1024px){
+            .container{
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                min-width:300px ;
+            }
+            .card{
+                max-width: 400px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Our Best Designers</h1>
+    <div class="container">
+
+        <div class="card">
+            <h1>Navani</h1>
+        <img class="profile" src="/learning_period/Simple_profile_card/navani_1.jpg" width="200px">
+        <p>Hi,this is Navanidhiram a professional <br>
+        Content Creator and a Graphic Designer <br> 
+        with <strong>3 Years of Experience</strong><br>
+        and also worked with <strong>10+ Clients</strong>
+        </p>
+        <a class="insta" href="https://www.instagram.com" alt="Instagram" target="_blank">Instagram</a>
+        </div>
+
+        <div class="card">
+            <h1>Tamil Selvan</h1>
+        <img class="profile" src="/learning_period/Simple_profile_card/DSLR_PIC.jpg" width="200px">
+        <p>Hi,this is Tamil Selvan a professional <br>
+        Video Editor and a Graphic Designer <br> 
+        with <strong>2.5 Years of Experience</strong><br>
+        and also worked with <strong>30+ Clients</strong>
+        </p>
+        <a class="insta" href="https://www.instagram.com" alt="Instagram" target="_blank">Instagram</a>
+        </div>
+        
+        <div class="card">
+            <h1>Sathish</h1>
+        <img class="profile" src="/learning_period/Simple_profile_card/sathish.jpg" width="200px">
+        <p>Hi,this is Sathish a professional <br>
+        Data Analytics and a UI/UX Designer <br> 
+        with <strong>1.5 Years of Experience</strong><br>
+        and also worked with <strong>12+ Clients</strong>
+        </p>
+        <a class="insta" href="https://www.instagram.com" alt="Instagram" target="_blank">Instagram</a>
+        </div>
+        
+
+    </div>
+    
+    
+</body>
+</html>
